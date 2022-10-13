@@ -5,6 +5,7 @@
                 <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12">
                     <div class="box">
                         <h3 class="box-title">Products in your cart</h3>
+                        
                         <div class="plan-selection" v-for="item in items" :key="item.id">
                             <div class="plan-data" v-if="item.name">
                                 <input id="question1" name="question" type="radio" class="with-font" value="sel" />
