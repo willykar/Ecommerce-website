@@ -28,3 +28,7 @@ Route::get('/checkout/get/items', [CartsController::class, 'getCartItemsForCheck
 
 
 Route::post('/process/user/payment', [CartsController::class, 'processPayment']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
